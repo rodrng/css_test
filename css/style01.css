@@ -1,0 +1,19 @@
+/* chapter07 css 파일 */
+
+h1{
+    background-color:pink;
+}
+
+#blue {
+    color:white;
+    background-color:blue;
+}
+/* 하위폴더가 아니라 다르다면 ../ 기억해라  */
+body {
+    background-image:url("../img/flower_bee.jpg");
+    background-repeat:no-repeat;
+    background-position:rigth center;
+
+}
+
+
