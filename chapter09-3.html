@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입양식</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        ul{
+            list-style-type:none;
+        }
+
+        h3{
+            margin:20px 0 0 50px;
+        }
+
+        #member_form{
+            width:500px;
+            margin:10px 0 0 50px;
+            color: gray;
+            font-family:"맑은 고딕";
+            font-size:14px;
+            border-top: solid 1px #cccccc;
+            border-bottom: solid 1px #cccccc;
+            padding-top:10px;
+            padding-bottom:15px;
+        }
+
+        .cols li{
+            display:inline-block;
+            margin:5px;
+        }
+
+        .cols li.col1{
+            width:100px;
+            text-align:right;
+            font-weight:bold;
+        }
+
+        .cols li.col2 input.phone{
+            width:40px;
+        }
+
+        #intro {
+            vertical-align:top;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>회원 가입 양식</h3>
+    <form>
+        <ul id="member_form">
+            <li>
+                <ul class="cols">
+                    <li class="col1">아이디 : </li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 : </li>
+                    <li class="col2"><input type="password"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">비밀번호 확인 : </li>
+                    <li class="col2"><input type="password"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">이름 : </li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">성별 : </li>
+                    <li class="col2"><input type="radio" name="gender" checked> 여성
+                    <input type="radio" name="gender"> 남성 </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">휴대전화 : </li>
+                    <li class="col2">
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>017</option>
+                        </select> - <input class="phone" type="text"> - <input class="phone" type="text">
+                    </li>
+                </ul>
+            </li>
+              <li>
+                <ul class="cols">
+                    <li class="col1">이메일 : </li>
+                    <li class="col2"><input type="text"> @
+                        <select>
+                            <option>선택</option>
+                            <option>naver.com</option>
+                            <option>daum.net</option>
+                            <option>gmail.com</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">취미 : </li>
+                    <li class="col2"><input type="checkbox" name="hobby1"> 음악감상
+                        <input type="checkbox" name="hobby2"> 독서
+                        <input type="checkbox" name="hobby3"> 등산
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1" id="intro">자기소개 : </li>
+                    <li class="col2"><textarea cols="35" rows="5"></textarea></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">파일 첨부 : </li>
+                    <li class="col2"><input type="file">* 2MB까지 가능</li>
+                </ul>
+            </li>
+
+        </ul>
+    </form>
+</body>
+</html>
