@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 레이아웃</title>
+    <style>
+        header {
+        border:solid 1px red;
+        width:800px;
+        height:100px;
+        margin:2px;
+        }
+
+        aside {
+        width:200px;
+        height:400px;
+        border:solid 1px blue;
+        float:left;
+        margin:2px;
+        }
+
+        nav {
+        border:solid 1px pink;
+        height:300px;
+        }
+
+        main {
+        width:594px;
+        height:400px;
+        border:solid 1px green;
+        float:left;
+        margin:2px;
+        }
+
+        section {
+        border:solid 1px gray;
+        height:150px;
+        width:550px;
+        }
+
+        footer {
+        width:800px;
+        height:100px;
+        border:solid 1px black;
+        margin:2px;
+        }
+
+        .clear {
+            clear:both;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        상단 헤더 부분
+    </header>
+
+    <aside>
+        좌측 부분
+        <nav>
+            메뉴 부분
+        </nav>
+    </aside>
+
+    <main>
+        메인 콘텐츠 부분
+        <section>
+            콘텐츠 1 부분
+        </section>
+        <section>
+            콘텐츠 2 부분
+        </section>
+    </main>
+
+<div class="clear"></div>
+
+    <footer>
+        하단 푸터 부분
+    </footer>
+</body>
+</html>

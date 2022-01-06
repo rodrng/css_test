@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 레이아웃</title>
+    <style>
+        * {
+        margin:0;
+        padding:0;
+        }
+
+        #wrap {
+            width:1000px;
+            margin:0 auto;
+        }
+
+        header {
+        height:100px;
+            background-color:pink;
+        }
+
+        footer {
+        height:80px;
+            background-color:yellow;
+            clear:both;
+        }
+
+        aside#life {
+            width:200px;
+            height:500px;
+            float:left;
+            background-color:gray;
+        }
+
+         aside#right {
+            width:200px;
+            height:500px;
+            float:right;
+            background-color:red;
+        }
+
+        main {
+            width:600px;
+            height:500px;
+            float:left;
+            background-color:orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            상단 헤더 부분
+        </header>
+        <aside id="life">
+            좌측 부분
+        </aside>
+        <main>
+            메인 콘텐츠 부분
+        </main>
+        <aside id="right">
+            우측 부분
+        </aside>
+        <footer>
+            하단 푸터 부분
+        </footer>
+    </div>
+</body>
+</html>
