@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position01</title>
+    <style>
+        #parent {
+            width:500px;
+            height:300px;
+            border:solid 5px gray;
+            margin:100px 0 0 100px;
+
+        }
+
+        #box1 {
+            width:80px;
+            height:80px;
+            background-color:red;
+        }
+
+        #box2 {
+            width:80px;
+            height:80px;
+            background-color:green;
+        }
+
+        #box3 {
+            width:80px;
+            height:80px;
+            background-color:blue;
+        }
+
+        #parent {
+            poistion:relative;
+        }
+
+
+
+        #box2 {
+            position:absolute;
+            top:20px;
+            left:30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">A</div>
+        <div id="box2">B</div>
+        <div id="box3">C</div>
+    </div>
+</body>
+</html>
